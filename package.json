@@ -1,0 +1,25 @@
+{
+  "name": "zazu-fallback",
+  "version": "1.0.0",
+  "description": "Common fallback searches for Zazu.",
+  "main": "mega.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blainesch/zazu-fallback.git"
+  },
+  "author": "Blaine Schmeisser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blainesch/zazu-fallback/issues"
+  },
+  "homepage": "https://github.com/blainesch/zazu-fallback#readme",
+  "devDependencies": {
+    "tape": "^4.6.0"
+  }
+}
