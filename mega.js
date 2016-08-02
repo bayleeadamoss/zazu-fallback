@@ -12,6 +12,7 @@ const searches = {
   twitter: 'https://twitter.com/search?q=',
   stack: 'https://stackoverflow.com/search?q=',
   wiki: 'https://wikipedia.org/wiki/Special:Search/',
+  wolf: 'http://www.wolframalpha.com/input/?i='
   youtube: 'https://www.youtube.com/results?search_query=',
 }
 
