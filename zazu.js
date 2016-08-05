@@ -6,9 +6,9 @@ module.exports = {
   blocks: {
     input: [
       {
-        id: 'Mega',
+        id: 'Prefix',
         type: 'RootScript',
-        script: 'mega.js',
+        script: 'prefix.js',
         connections: ['Open'],
       },
     ],

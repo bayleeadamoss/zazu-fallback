@@ -2,7 +2,7 @@
   "name": "zazu-fallback",
   "version": "1.0.0",
   "description": "Common fallback searches for Zazu.",
-  "main": "mega.js",
+  "main": "zazu.js",
   "directories": {
     "test": "test"
   },
