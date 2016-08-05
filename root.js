@@ -6,10 +6,13 @@ module.exports = (pluginContext) => {
 
   return {
     respondsTo: (query) => {
-      return true
+      return query.length > 1
     },
     search: (query, env = {}) => {
       const rootSearches = env.rootSearches || []
+
+      const possiblePrefix = query.split(' ')[0]
+      if (searches[possiblePrefix]) return Promise.resolve([])
 
       const promises = rootSearches.map((prefix) => {
         if (!searches[prefix]) return false
