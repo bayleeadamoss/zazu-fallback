@@ -3,7 +3,7 @@ const prefix = require('../prefix')
 
 const plugin = prefix({cwd: process.cwd()})
 
-describe('respondsTo', (assert) => {
+describe('Prefix.respondsTo', (assert) => {
   assert.plan(3)
 
   assert.ok(plugin.respondsTo('amazon dog food'))
@@ -11,7 +11,7 @@ describe('respondsTo', (assert) => {
   assert.notOk(plugin.respondsTo('mootools tween'))
 })
 
-describe('search', (assert) => {
+describe('Prefix.search', (assert) => {
   assert.plan(3)
 
   return plugin.search('gh reflog-review').then((result) => {

@@ -2,7 +2,7 @@ const describe = require('tape')
 
 const http = require('../http')({})
 
-describe('respondsTo', (assert) => {
+describe('Http.respondsTo', (assert) => {
   assert.plan(3)
 
   assert.ok(http.respondsTo('http://blainesch.com/pry.js/'))
@@ -10,7 +10,7 @@ describe('respondsTo', (assert) => {
   assert.notOk(http.respondsTo('ftp://somehost/'))
 })
 
-describe('search', (assert) => {
+describe('Http.search', (assert) => {
   assert.plan(2)
 
   return http.search('https://github.com').then((result) => {

@@ -17,6 +17,12 @@ module.exports = {
         script: 'http.js',
         connections: ['Open'],
       },
+      {
+        id: 'Root',
+        type: 'RootScript',
+        script: 'root.js',
+        connections: ['Open'],
+      },
     ],
     output: [
       {
