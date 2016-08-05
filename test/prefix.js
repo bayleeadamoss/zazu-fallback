@@ -1,6 +1,4 @@
 const describe = require('tape')
-const path = require('path')
-
 const prefix = require('../prefix')
 
 const plugin = prefix({cwd: process.cwd()})

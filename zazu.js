@@ -11,6 +11,12 @@ module.exports = {
         script: 'prefix.js',
         connections: ['Open'],
       },
+      {
+        id: 'Http',
+        type: 'RootScript',
+        script: 'http.js',
+        connections: ['Open'],
+      },
     ],
     output: [
       {
