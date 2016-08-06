@@ -12,7 +12,7 @@ const searches = {
   stack: { name: 'Stack Overflow', url: 'https://stackoverflow.com/search?q='},
   ud: { name: 'Urban Dictionary', url: 'https://www.urbandictionary.com/define.php?term='},
   wiki: { name: 'Wikipedia', url: 'https://wikipedia.org/wiki/Special:Search/'},
-  wolf: { name: 'Wolfram Alpha', url: 'http://www.wolframalpha.com/input/?i='},
+  wolf: { name: 'Wolfram Alpha', url: 'https://www.wolframalpha.com/input/?i='},
   youtube: { name: 'YouTube', url: 'https://www.youtube.com/results?search_query='},
 }
 

@@ -65,5 +65,5 @@ To setup your prefered searches add a variable called `rootSearches`:
 * `stack`: [Stack Overflow](https://stackoverflow.com/)
 * `ud`: [Urban Dictionary](https://www.urbandictionary.com/)
 * `wiki`: [Wikipedia](https://wikipedia.org/)
-* `wolf`: [Wolfram Alpha](http://www.wolframalpha.com/)
+* `wolf`: [Wolfram Alpha](https://www.wolframalpha.com/)
 * `youtube`: [YouTube](https://www.youtube.com/)
