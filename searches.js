@@ -10,6 +10,7 @@ const searches = {
   translate: { name: 'Google Translate', url: 'https://translate.google.com/?text='},
   twitter: { name: 'Twitter', url: 'https://twitter.com/search?q='},
   stack: { name: 'Stack Overflow', url: 'https://stackoverflow.com/search?q='},
+  ud: { name: 'Urban Dictionary', url: 'https://www.urbandictionary.com/define.php?term='},
   wiki: { name: 'Wikipedia', url: 'https://wikipedia.org/wiki/Special:Search/'},
   wolf: { name: 'Wolfram Alpha', url: 'http://www.wolframalpha.com/input/?i='},
   youtube: { name: 'YouTube', url: 'https://www.youtube.com/results?search_query='},
