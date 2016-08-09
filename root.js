@@ -17,11 +17,13 @@ module.exports = (pluginContext) => {
       const promises = rootSearches.map((prefix) => {
         if (!searches[prefix]) return false
         return new Promise((resolve, reject) => {
-          resolve({
-            icon: path.join(cwd, 'assets', prefix + '.png'),
-            title: 'Search ' + searches[prefix].name + ' for ' + query,
-            value: searches[prefix].url + encodeURIComponent(query)
-          })
+          setTimeout(() => {
+            resolve({
+              icon: path.join(cwd, 'assets', prefix + '.png'),
+              title: 'Search ' + searches[prefix].name + ' for ' + query,
+              value: searches[prefix].url + encodeURIComponent(query)
+            })
+          }, 5)
         })
       })
 
