@@ -1,6 +1,6 @@
 ## Zazu Fallback
 
-[![Build Status](https://travis-ci.org/blainesch/zazu-fallback.svg?branch=master)](https://travis-ci.org/blainesch/zazu-fallback)
+[![Build Status](https://travis-ci.org/tinytacoteam/zazu-fallback.svg?branch=master)](https://travis-ci.org/tinytacoteam/zazu-fallback)
 
 Creates some great fallback / web search functionality for Zazu.
 
@@ -36,14 +36,14 @@ isn't open yet.
 Add the package to your plugins array in `./zazurc.js`.
 
 ~~~ javascript
-'blainesch/zazu-fallback',
+'tinytacoteam/zazu-fallback',
 ~~~
 
 To setup your prefered searches add a variable called `rootSearches`:
 
 ~~~ javascript
 {
-  name: 'blainesch/zazu-fallback',
+  name: 'tinytacoteam/zazu-fallback',
   variables: {
     rootSearches: ['npm', 'google', 'amazon', 'giphy', 'gh'],
   },
