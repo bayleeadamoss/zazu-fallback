@@ -2,8 +2,6 @@ const path = require('path')
 const searches = require('./searches')
 
 module.exports = (pluginContext) => {
-  const { cwd } = pluginContext
-
   return {
     respondsTo: (query) => {
       return query.length > 1
@@ -19,7 +17,7 @@ module.exports = (pluginContext) => {
         return new Promise((resolve, reject) => {
           setTimeout(() => {
             resolve({
-              icon: path.join(cwd, 'assets', prefix + '.png'),
+              icon: path.join('assets', prefix + '.png'),
               title: 'Search ' + searches[prefix].name + ' for ' + query,
               value: searches[prefix].url + encodeURIComponent(query)
             })

@@ -2,8 +2,6 @@ const path = require('path')
 const searches = require('./searches')
 
 module.exports = (pluginContext) => {
-  const { cwd } = pluginContext
-
   return {
     respondsTo: (query) => {
       return Object.keys(searches).find((prefix) => {
@@ -17,7 +15,7 @@ module.exports = (pluginContext) => {
 
       return new Promise((resolve, reject) => {
         resolve([{
-          icon: path.join(cwd, 'assets', prefix + '.png'),
+          icon: path.join('assets', prefix + '.png'),
           title: 'Search ' + searches[prefix].name + ' for ' + term,
           value: searches[prefix].url + encodeURIComponent(term)
         }])
