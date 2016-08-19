@@ -6,6 +6,7 @@ const searches = {
   google: { name: 'Google', url: 'https://www.google.com/search?q='},
   images: { name: 'Google Images', url: 'https://www.google.com/search?tbm=isch&q='},
   maps: { name: 'Google Maps', url: 'https://www.google.com/maps?q='},
+  mdn: { name: 'Mozilla Developer Network', url: 'https://mdn.io/'},
   npm: { name: 'NPM', url: 'https://www.npmjs.com/search?q='},
   translate: { name: 'Google Translate', url: 'https://translate.google.com/?text='},
   twitter: { name: 'Twitter', url: 'https://twitter.com/search?q='},
