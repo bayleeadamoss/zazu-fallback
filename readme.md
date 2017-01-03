@@ -33,20 +33,20 @@ isn't open yet.
 
 ## Installing
 
-Add the package to your plugins array in `./zazurc.js`.
+Add the package to your plugins array in `./zazurc.json`.
 
-~~~ javascript
-'tinytacoteam/zazu-fallback',
+~~~ json
+"tinytacoteam/zazu-fallback"
 ~~~
 
 To setup your prefered searches add a variable called `rootSearches`:
 
-~~~ javascript
+~~~ json
 {
-  name: 'tinytacoteam/zazu-fallback',
-  variables: {
-    rootSearches: ['npm', 'google', 'amazon', 'giphy', 'gh'],
-  },
+  "name": "tinytacoteam/zazu-fallback",
+  "variables": {
+    "rootSearches": ["npm", "google", "amazon", "giphy", "gh"]
+  }
 }
 ~~~
 
