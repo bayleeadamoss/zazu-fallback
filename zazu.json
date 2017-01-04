@@ -1,7 +1,7 @@
 {
-  "name": "Calculator",
+  "name": "Fallback",
   "version": "0.0.1",
-  "description": "Calculate stuff.",
+  "description": "Fallback websearch plugin for unmatched actions",
   "icon": "icon.png",
   "blocks": {
     "input": [
