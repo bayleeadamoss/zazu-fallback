@@ -8,6 +8,7 @@ const searches = {
   maps: { name: 'Google Maps', url: 'https://www.google.com/maps?q='},
   mdn: { name: 'Mozilla Developer Network', url: 'https://mdn.io/'},
   npm: { name: 'NPM', url: 'https://www.npmjs.com/search?q='},
+  packagist: { name: "Packagist", url: 'https://packagist.org/search/?q='},
   translate: { name: 'Google Translate', url: 'https://translate.google.com/?text='},
   twitter: { name: 'Twitter', url: 'https://twitter.com/search?q='},
   stack: { name: 'Stack Overflow', url: 'https://stackoverflow.com/search?q='},
