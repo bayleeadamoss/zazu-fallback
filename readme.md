@@ -60,6 +60,7 @@ To setup your prefered searches add a variable called `rootSearches`:
 * `images`: [Google Images](https://www.google.com/)
 * `maps`: [Google Maps](https://www.google.com/)
 * `npm`: [NPM](https://www.npmjs.com/)
+* `packagist`: [Packagist](https://packagist.org)
 * `translate`: [Google Translate](https://translate.google.com/)
 * `twitter`: [Twitter](https://twitter.com/)
 * `stack`: [Stack Overflow](https://stackoverflow.com/)
