@@ -102,15 +102,19 @@ To add an icon, place a 256x256 png in the `.zazu/plugins/tinytacoteam/zazu-fall
 Next, add a line for your search in `.zazurc.json`:
 
 ```
-{
+    {
       "name": "tinytacoteam/zazu-fallback",
       "variables": {
         "rootSearches": [
+          "npm",
           "google",
+          "amazon",
+          "giphy",
           "gh",
           "gcache"
         ]
       }
+    }    }
 }
 ```
 
