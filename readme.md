@@ -99,7 +99,7 @@ module.exports = searches
 
 To add an icon, place a 256x256 png in the `.zazu/plugins/tinytacoteam/zazu-fallback/assets` with the same name as your custom search. In this case: `gcache.png`.
 
-Now, add a line for your search in `.zazurc.json`:
+Next, add a line for your search in `.zazurc.json`:
 
 ```
 {
