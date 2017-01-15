@@ -79,7 +79,7 @@ You can add your own custom searches by editing the searches.js file located in 
 
 After the last search in the list, `youtube: { name: 'YouTube', url: 'https://www.youtube.com/results?search_query='}` by default, add a comma: `youtube: { name: 'YouTube', url: 'https://www.youtube.com/results?search_query='},`.
 
-Now you can create your own entry. For example, if you had setup a custom search in Chrome for Google Cache, it would look like this:
+Now you can create your own entry. For example, if you setup a custom search in Chrome for Google Cache, it would look like this:
 
 `https://webcache.googleusercontent.com/search?q=cache:%s
 ` 
