@@ -77,13 +77,11 @@ To setup your prefered searches add a variable called `rootSearches`:
 
 You can add your own custom searches by editing the searches.js file located in `.zazu/plugins/tinytacoteam/zazu-fallback`.
 
-After the last search in the list, `youtube: { name: 'YouTube', url: 'https://www.youtube.com/results?search_query='}` by default, add a comma: `youtube: { name: 'YouTube', url: 'https://www.youtube.com/results?search_query='},`.
-
-Now you can create your own entry. For example, if you setup a custom search in Chrome for Google Cache, it would look like this:
+For example, if you setup a custom search in Chrome for Google Cache, it would look like this:
 
 `https://webcache.googleusercontent.com/search?q=cache:%s
 ` 
-Remove the %s, and add your own entry:
+Remove the %s, and create your own entry:
 
 ` gcache: { name: 'Webpage Cache', url: 'https://webcache.googleusercontent.com/search?q=cache:'}
 `
@@ -97,7 +95,7 @@ Make sure not to put a comma after the last search. It should look like this fol
 module.exports = searches
 ```
 
-To add an icon, place a 256x256 png in the `.zazu/plugins/tinytacoteam/zazu-fallback/assets` with the same name as your custom search. In this case: `gcache.png`.
+To add an icon, place a 256x256 png in the `.zazu/plugins/tinytacoteam/zazu-fallback/assets` with the same name as your custom search. In this case it would be: `gcache.png`.
 
 Next, add a line for your search in `.zazurc.json`:
 
