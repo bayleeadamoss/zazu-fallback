@@ -92,9 +92,9 @@ Remove the %s, and create your own entry:
 module.exports = searches
 ```
 
-To add an icon, place a 256x256 png in `.zazu/plugins/tinytacoteam/zazu-fallback/assets` with the same name as your custom search. In this case it would be: `gcache.png`.
+To add an icon, place a 256x256 png in `.zazu/plugins/tinytacoteam/zazu-fallback/assets` with the same name as your custom search's prefix. In this case it would be: `gcache.png`.
 
-Next, add a line for your search in `.zazurc.json`:
+Add a line for your search in `.zazurc.json`:
 
 ```
     {
@@ -112,7 +112,7 @@ Next, add a line for your search in `.zazurc.json`:
     }
 ```
 
-Update the plugins AND reload config (so Zazu knows to use the search you just created).
+Update plugins AND reload config (so Zazu knows to use the search you just created).
 
 Your custom search is ready. In this case you could launch Zazu, type "gcache arstechnica.com", and get the Google cache for Ars Technica.
 
