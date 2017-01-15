@@ -73,7 +73,7 @@ To setup your prefered searches add a variable called `rootSearches`:
 
 ![screenshot](./assets/screenshot.png)
 
-## Add your own searches
+## Add Your Own Searches
 
 You can add your own custom searches by editing the searches.js file located in `.zazu/plugins/tinytacoteam/zazu-fallback`.
 
