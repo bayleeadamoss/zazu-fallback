@@ -114,8 +114,7 @@ Next, add a line for your search in `.zazurc.json`:
           "gcache"
         ]
       }
-    }    }
-}
+    }
 ```
 
 Update the plugins AND reload config (so Zazu knows to use the search you just created).
