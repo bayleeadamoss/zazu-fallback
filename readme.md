@@ -77,7 +77,7 @@ To setup your prefered searches add a variable called `rootSearches`:
 
 You can add your own custom searches by editing the searches.js file located in `.zazu/plugins/tinytacoteam/zazu-fallback`.
 
-For example, if you setup a custom search in Chrome for Google Cache, it would look like this:
+For example, if you setup a custom search in Chrome for Google's cache, it would look like this:
 
 `https://webcache.googleusercontent.com/search?q=cache:%s
 ` 
@@ -85,7 +85,7 @@ Remove the %s, and create your own entry:
 
 ```
   youtube: { name: 'YouTube', url: 'https://www.youtube.com/results?search_query='},
-  gcache: { name: 'Webpage Cache', url: 'https://webcache.googleusercontent.com/search?q=cache:'}
+  gcache: { name: 'Google Cache', url: 'https://webcache.googleusercontent.com/search?q=cache:'}
 }
 
 module.exports = searches
@@ -113,7 +113,7 @@ Next, add a line for your search in `.zazurc.json`:
 
 Update the plugins AND reload config (so Zazu knows to use the search you just created).
 
-Your custom search is ready. In this case you could launch Zazu, type "gcache arstechnica.com", and get the Google web cache for Ars Technica.
+Your custom search is ready. In this case you could launch Zazu, type "gcache arstechnica.com", and get the Google cache for Ars Technica.
 
 ![screenshot from 2017-01-14 20-26-37](https://cloud.githubusercontent.com/assets/10121835/21959787/f9c25700-da97-11e6-871b-ee25d948282b.png)
 
