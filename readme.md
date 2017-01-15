@@ -72,3 +72,52 @@ To setup your prefered searches add a variable called `rootSearches`:
 ## Screenshot
 
 ![screenshot](./assets/screenshot.png)
+
+## Add your own searches
+
+You can add your own custom searches by editing the searches.js file located in `.zazu/plugins/tinytacoteam/zazu-fallback`.
+
+After the last search in the list, `youtube: { name: 'YouTube', url: 'https://www.youtube.com/results?search_query='}` by default, add a comma: `youtube: { name: 'YouTube', url: 'https://www.youtube.com/results?search_query='},`.
+
+Now you can add your own search. For example, if you had setup a custom search in Chrome for Google Cache, it would look like this:
+
+`https://webcache.googleusercontent.com/search?q=cache:%s
+` 
+Remove the %s, and add your own entry:
+
+` gcache: { name: 'Webpage Cache', url: 'https://webcache.googleusercontent.com/search?q=cache:'}
+`
+Make sure not to put a comma after the last search. It should look like this following the above examples:
+
+```
+  youtube: { name: 'YouTube', url: 'https://www.youtube.com/results?search_query='},
+  gcache: { name: 'Webpage Cache', url: 'https://webcache.googleusercontent.com/search?q=cache:'}
+}
+
+module.exports = searches
+```
+
+To add an icon, place a 256x256 png in the `.zazu/plugins/tinytacoteam/zazu-fallback/assets` with the same name as your custom search. In this case: `gcache.png`.
+
+Now, add a line for your search in `.zazurc.json`:
+
+```
+{
+      "name": "tinytacoteam/zazu-fallback",
+      "variables": {
+        "rootSearches": [
+          "google",
+          "gh",
+          "gcache"
+        ]
+      }
+}
+```
+
+Update the plugins AND reload config (so Zazu knows to use the search you just created).
+
+Your custom search is ready. In this case you could launch Zazu, type "gcache arstechnica.com", and get the Google web cache for Ars Technica.
+
+![screenshot from 2017-01-14 15-07-06](https://cloud.githubusercontent.com/assets/10121835/21958123/4c76a0dc-da6b-11e6-8b8d-eb4a5edd0360.png)
+
+If there is a stray }, ], or comma anywhere, you'll get errors and have to double-check your edits.
