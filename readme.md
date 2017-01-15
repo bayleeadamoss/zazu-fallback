@@ -83,10 +83,6 @@ For example, if you setup a custom search in Chrome for Google Cache, it would l
 ` 
 Remove the %s, and create your own entry:
 
-` gcache: { name: 'Webpage Cache', url: 'https://webcache.googleusercontent.com/search?q=cache:'}
-`
-Make sure not to put a comma after the last search. It should look like this following the above examples:
-
 ```
   youtube: { name: 'YouTube', url: 'https://www.youtube.com/results?search_query='},
   gcache: { name: 'Webpage Cache', url: 'https://webcache.googleusercontent.com/search?q=cache:'}
