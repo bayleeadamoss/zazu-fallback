@@ -118,6 +118,4 @@ Update the plugins AND reload config (so Zazu knows to use the search you just c
 
 Your custom search is ready. In this case you could launch Zazu, type "gcache arstechnica.com", and get the Google web cache for Ars Technica.
 
-![screenshot from 2017-01-14 15-07-06](https://cloud.githubusercontent.com/assets/10121835/21958123/4c76a0dc-da6b-11e6-8b8d-eb4a5edd0360.png)
-
 If there is a stray }, ], or comma anywhere, you'll get errors and have to double-check your edits.
