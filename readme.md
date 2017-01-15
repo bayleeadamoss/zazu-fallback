@@ -81,6 +81,7 @@ For example, if you setup a custom search in Chrome for Google's cache, it would
 
 `https://webcache.googleusercontent.com/search?q=cache:%s
 ` 
+
 Remove the %s, and create your own entry:
 
 ```
