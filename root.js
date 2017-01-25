@@ -12,25 +12,15 @@ module.exports = (pluginContext) => {
       const possiblePrefix = query.split(' ')[0]
       if (searches[possiblePrefix]) return Promise.resolve([])
 
-      const promises = rootSearches.map((prefix) => {
-        if (!searches[prefix]) return false
-        return new Promise((resolve, reject) => {
-          setTimeout(() => {
-            resolve({
-              icon: path.join('assets', prefix + '.png'),
-              title: 'Search ' + searches[prefix].name + ' for ' + query,
-              value: searches[prefix].url + encodeURIComponent(query)
-            })
-          }, 5)
-        })
-      })
-
-      const compactedPromises = promises.reduce((memo, item) => {
-        if (item) memo.push(item)
-          return memo
-      }, [])
-
-      return Promise.all(compactedPromises)
+      return Promise.resolve(rootSearches.filter((prefix) => {
+        return searches[prefix]
+      }).map((prefix) => {
+        return {
+          icon: path.join('assets', prefix + '.png'),
+          title: 'Search ' + searches[prefix].name + ' for ' + query,
+          value: searches[prefix].url + encodeURIComponent(query)
+        }
+      }))
     },
   }
 }
