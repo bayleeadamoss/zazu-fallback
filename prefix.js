@@ -13,13 +13,11 @@ module.exports = (pluginContext) => {
       const prefix = queryBits[0]
       const term = queryBits.slice(1).join(' ')
 
-      const encodedQuery = encodeURIComponent(query)
       return new Promise((resolve, reject) => {
         resolve([{
-          id: prefix + encodedQuery,
           icon: path.join('assets', prefix + '.png'),
           title: 'Search ' + searches[prefix].name + ' for ' + term,
-          value: searches[prefix].url + encodedQuery,
+          value: searches[prefix].url + encodeURIComponent(term)
         }])
       })
     },

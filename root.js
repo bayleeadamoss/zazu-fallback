@@ -12,16 +12,16 @@ module.exports = (pluginContext) => {
       const possiblePrefix = query.split(' ')[0]
       if (searches[possiblePrefix]) return Promise.resolve([])
 
-      const encodedQuery = encodeURIComponent(query)
       const promises = rootSearches.map((prefix) => {
         if (!searches[prefix]) return false
         return new Promise((resolve, reject) => {
-          resolve({
-            id: prefix + encodedQuery,
-            icon: path.join('assets', prefix + '.png'),
-            title: 'Search ' + searches[prefix].name + ' for ' + query,
-            value: searches[prefix].url + encodedQuery,
-          })
+          setTimeout(() => {
+            resolve({
+              icon: path.join('assets', prefix + '.png'),
+              title: 'Search ' + searches[prefix].name + ' for ' + query,
+              value: searches[prefix].url + encodeURIComponent(query)
+            })
+          }, 5)
         })
       })
 
