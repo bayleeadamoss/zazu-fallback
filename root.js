@@ -8,19 +8,24 @@ module.exports = (pluginContext) => {
     },
     search: (query, env = {}) => {
       const rootSearches = env.rootSearches || []
+      const prefixSearches = env.prefixSearches || {}
+      const searchKeys = [...Object.keys(searches), ...Object.keys(prefixSearches)]
 
       const possiblePrefix = query.split(' ')[0]
-      if (searches[possiblePrefix]) return Promise.resolve([])
+      if (searchKeys.indexOf(possiblePrefix) !== -1) return Promise.resolve([])
 
-      return Promise.resolve(rootSearches.filter((prefix) => {
-        return searches[prefix]
-      }).map((prefix) => {
-        return {
-          icon: path.join('assets', prefix + '.png'),
-          title: 'Search ' + searches[prefix].name + ' for ' + query,
-          value: searches[prefix].url + encodeURIComponent(query)
-        }
-      }))
+      return Promise.resolve(
+        rootSearches.filter((prefix) => {
+          return searches[prefix] || prefixSearches[prefix]
+        }).map((prefix) => {
+          const search = searches[prefix] || prefixSearches[prefix]
+          return {
+            icon: search.icon || path.join('assets', prefix + '.png'),
+            title: 'Search ' + search.name + ' for ' + query,
+            value: search.url + encodeURIComponent(query)
+          }
+        })
+      )
     },
   }
 }
