@@ -3,23 +3,32 @@ const searches = require('./searches')
 
 module.exports = (pluginContext) => {
   return {
-    respondsTo: (query) => {
-      return Object.keys(searches).find((prefix) => {
+    respondsTo: (query, env = {}) => {
+      const prefixSearches = env.prefixSearches || {}
+      const searchKeys = [...Object.keys(searches), ...Object.keys(prefixSearches)]
+
+      return searchKeys.find((prefix) => {
         return query.indexOf(prefix + ' ') === 0
       })
     },
-    search: (query) => {
+    search: (query, env = {}) => {
+      const prefixSearches = env.prefixSearches || {}
+
       const queryBits = query.split(' ')
       const prefix = queryBits[0]
       const term = queryBits.slice(1).join(' ')
 
-      return new Promise((resolve, reject) => {
-        resolve([{
-          icon: path.join('assets', prefix + '.png'),
-          title: 'Search ' + searches[prefix].name + ' for ' + term,
-          value: searches[prefix].url + encodeURIComponent(term)
-        }])
-      })
+      const search = searches[prefix] || prefixSearches[prefix]
+
+      return Promise.resolve(
+        [
+          {
+            icon: search.icon || path.join('assets', prefix + '.png'),
+            title: 'Search ' + search.name + ' for ' + term,
+            value: search.url + encodeURIComponent(term)
+          }
+        ]
+      )
     },
   }
 }

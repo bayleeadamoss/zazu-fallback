@@ -39,13 +39,30 @@ Add the package to your plugins array in `./zazurc.json`.
 "tinytacoteam/zazu-fallback"
 ~~~
 
+You can also define custom searches:
+
+~~~ json
+{
+  "name": "tinytacoteam/zazu-fallback",
+  "variables": {
+    "prefixSearches": {
+      "library": {
+        "icon": "fa-book",
+        "name": "Library",
+        "url": "https://multcolib.org/search/site/"
+      }
+    }
+  }
+}
+~~~
+
 To setup your prefered searches add a variable called `rootSearches`:
 
 ~~~ json
 {
   "name": "tinytacoteam/zazu-fallback",
   "variables": {
-    "rootSearches": ["npm", "google", "amazon", "giphy", "gh"]
+    "rootSearches": ["google", "library"]
   }
 }
 ~~~
