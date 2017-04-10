@@ -85,6 +85,7 @@ To setup your prefered searches add a variable called `rootSearches`:
 * `wiki`: [Wikipedia](https://wikipedia.org/)
 * `wolf`: [Wolfram Alpha](https://www.wolframalpha.com/)
 * `youtube`: [YouTube](https://www.youtube.com/)
+* `thing`: [Thingiverse](https://www.thingiverse.com/)
 
 ## Screenshot
 
