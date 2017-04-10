@@ -16,6 +16,9 @@ const searches = {
   wiki: { name: 'Wikipedia', url: 'https://wikipedia.org/wiki/Special:Search/'},
   wolf: { name: 'Wolfram Alpha', url: 'https://www.wolframalpha.com/input/?i='},
   youtube: { name: 'YouTube', url: 'https://www.youtube.com/results?search_query='},
+  thingiverse: { name: 'Thingiverse', url: 'http://www.thingiverse.com/search?q='},
+  wref: {name: 'Wordreference En/Fr', url: 'http://www.wordreference.com/enfr/'},
+  wrfe: {name: 'Wordreference Fr/En', url: 'http://www.wordreference.com/fren/'},
 }
 
 module.exports = searches
